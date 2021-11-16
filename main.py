@@ -69,12 +69,13 @@ def test_huffman_simple():
     C = get_code(T)
     assert huffman_cost(C, f) == 17
 
-def test_huffman():
-    f = get_frequencies('f1.txt')
-    print("Fixed-length cost:  %d" % fixed_length_cost(f))
-    T = make_huffman_tree(f)
-    C = get_code(T)
-    print("Huffman cost:  %d" % huffman_cost(C, f))
+def analyze_files():
+    for fname in ['alice29.txt', 'asyoulik.txt', 'f1.txt', 'fields.c', 'grammar.lsp']:
+        f = get_frequencies(fname)
+        print("Fixed-length cost:  %d" % fixed_length_cost(f))
+        T = make_huffman_tree(f)
+        C = get_code(T)
+        print("Huffman cost:  %d" % huffman_cost(C, f))
 
 
 ####### Problem 4 #######
