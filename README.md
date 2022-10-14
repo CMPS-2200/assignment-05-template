@@ -44,7 +44,7 @@ Here is a [cheatsheet] for markdown syntax.
 
 You will notice in the recitation documents that you can format mathematical expressions in markdown. To do so, wrap them in dollar signs. You can use [latex syntax] within the dollar signs. 
 
-For example, the run time of our first example, linear search, this semester is $c_1*n + c_2*n + c_4 \in O(n)$. 
+For example, the run time of our first example, linear search, this semester is $c_1n + c_2n + c_4 \in O(n)$. 
 
 More generally, the runtime of any program can be expressed as:
 
