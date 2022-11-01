@@ -54,7 +54,7 @@ performance on a dataset of 5 text files (`alice29.txt`, `asyoulik.txt`, `f1.txt
 
 ## Part 2: Making Change
 
-The pandemic is over and you decide to take a much needed vacation. You arrive in a city called Geometrica, and head to the bank to
+The semester is over and you decide to take a much needed vacation. You arrive in a city called Geometrica, and head to the bank to
 exchange $N$ dollars for local currency. In Geometrica they have a
 currency that is 1-1 with U.S. Dollars, but they only have
 coins. Moreover the coins are in
