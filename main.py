@@ -80,8 +80,8 @@ def analyze_files():
 
 ####### Problem 4 #######
 
-test_cases = [('book', 'back'), ('kookaburra', 'kookybird'), ('elephant', 'relevant'), ('AAAGAATTCA', 'AAATCA')]
-alignments = [('book', 'back'), ('kookaburra', 'kookybird-'), ('relev-ant','-elephant'), ('AAAGAATTCA', 'AAA---T-CA')]
+test_cases = [('book', 'back'), ('kookaburra', 'kookybird'), ('relevant', 'elephant')]
+alignments = [('book', 'back'), ('kookaburra', 'kookybird-'), ('relev-ant','-elephant')]
 
 def MED(S, T):
     # TODO - modify to account for insertions, deletions and substitutions
