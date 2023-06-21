@@ -96,13 +96,14 @@ def MED(S, T):
             return(1 + min(MED(S, T[1:]), MED(S[1:], T)))
 
 
-def fast_MED(S, T, MED_cache={}):
-    # TODO -  implement top-down memoization
+def fast_MED(S, T):
+    # TODO -  implement bottom-up memoization
     # returns only the edit distance cost
     pass
 
-def fast_align_MED(S, T, MED_cache={}):
-    # TODO - keep track of alignment
+def fast_align_MED(S, T):
+    # TODO - implement bottom-up memoization, allowing
+    # for traceback of alignment
     # returns the two alignments (see test_align)
     pass
 

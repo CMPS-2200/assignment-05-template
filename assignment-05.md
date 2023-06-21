@@ -95,10 +95,10 @@ and then implement a way to visualize the optimal sequence of edits.
   version of the edit distance problem which allows for insertions,
   deletions and substitutions. We will assume that insertions,
   deletions and substitutions all have the same unit cost. State the optimal substructure property
-  for this version of the edit distance problem and modify `MED` accordingly. 
+  for this version of the edit distance problem and modify function `MED` accordingly. 
 
 
-**3b)** Now implement `fast_MED`, a **top-down**
+**3b)** Now implement `fast_MED`, a **bottom-up**
   memoized version of `MED`. Test your implementation code using `test_MED`.
 
 
@@ -106,20 +106,20 @@ and then implement a way to visualize the optimal sequence of edits.
   computing edit distance, let's turn to the problem of identifying
   the actual edits between two sequences.
 
- Notice that in the process of computing the optimal edit
-  distance, we can also keep track of the actual sequence of edits to
-  each position of $S$ and $T$. Update your implementation of `fast_MED` to
-  return the optimal edit distance as well as an *alignment* of the
-  two strings which show the edits that yield this distance. An
-  alignment just shows what changes are made to $S$ to transform it to
-  $T$. For example, suppose $S$=`relevant` and $T$=`elephant`. If
-  insertion, deletion and substitution costs are all equal to $1$, then the
-  edit distance between $S$ and $T$ is 3 and an
-  alignment of these two strings would look like this:
+  In the process of computing the optimal edit distance, we can also keep 
+  track of the actual sequence of edits to each position of $S$ and $T$. 
+  Update your implementation of `fast_MED` to return an *alignment* of the
+  two strings which show the edits that yield the optimal edit distance. 
+  
+  An alignment just shows what changes are made to $S$ to transform it to
+  $T$. For example, suppose $S$=`relevant` and $T$=`elephant`. If insertion, 
+  deletion and substitution costs are all equal to $1$, then the edit 
+  distance between $S$ and $T$ is 3 and an alignment of these two
+  strings would look like this:
 
   `relev-ant`\
   `-elephant`
 
-Implement `fast_align_MED` to return the aligned versions of $S$ and $T$,
-and test your code with `test_alignment`.
+  Implement `fast_align_MED` to return the aligned versions of $S$ and $T$,
+  and test your code with `test_alignment`.
 
