@@ -97,6 +97,7 @@ and then implement a way to visualize the optimal sequence of edits.
   deletions and substitutions all have the same unit cost. State the optimal substructure property
   for this version of the edit distance problem and modify function `MED` accordingly. 
 
+**enter answer in `answers.md`**
 
 **3b)** Now implement `fast_MED`, a **bottom-up**
   memoized version of `MED`. Test your implementation code using `test_MED`.
